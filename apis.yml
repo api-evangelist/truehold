@@ -1,8 +1,17 @@
 aid: truehold
 name: Truehold
-description: 'Truehold is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Truehold is a St. Louis, Missouri-founded residential real estate company
+  that buys homes from owners and rents them back to those same owners through a residential
+  sale-leaseback, letting a homeowner convert home equity into cash without moving. Launched
+  in 2021, the company expanded across the Midwest and into the South and Southwest, and in
+  2025 added Truehold Financial, a Jacksonville, Florida-based lending arm offering DSCR
+  loans, fix-and-flip financing and other investor lending products. Truehold also transacts
+  portfolio sales and multifamily sales with real estate investors. Its public surface is a
+  marketing and lead-generation website plus two authenticated web applications for customers
+  and borrowers; it publishes no developer program, no API documentation and no
+  machine-readable API contract.'
 url: https://raw.githubusercontent.com/api-evangelist/truehold/refs/heads/main/apis.yml
+image: https://www.truehold.com/assets/og/truehold-og.png
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
@@ -12,6 +21,13 @@ created: '2026-08-30'
 modified: '2026-08-30'
 tags:
 - Company
+- Real Estate
+- Residential Real Estate
+- Sale-Leaseback
+- Home Equity
+- Property Investment
+- Lending
+- Financial Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +35,59 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: LLMsTxt
+  url: llms/truehold-llms.txt
+- type: DomainSecurity
+  url: security/truehold-domain-security.yml
 - type: Website
+  url: https://www.truehold.com/
+- type: About
+  url: https://www.truehold.com/about
+- type: Blog
+  url: https://www.truehold.com/post
+- type: News
+  url: https://www.truehold.com/news
+- type: Support
+  url: https://www.truehold.com/faqs
+- type: TermsOfService
+  url: https://www.truehold.com/terms
+- type: PrivacyPolicy
+  url: https://www.truehold.com/privacy
+- type: Licensing
+  url: https://www.truehold.com/licensing
+- type: CustomerPortal
+  url: https://my.truehold.com/
+- type: Careers
+  url: https://www.truehold.com/work-with-us
+- type: LinkedIn
+  url: https://www.linkedin.com/company/truehold
+- type: Email
+  url: mailto:hello@truehold.com
+- type: SecondaryMarketListing
   url: https://www.hiive.com/securities/truehold-stock
+x-enrichment:
+  date: '2026-08-30'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Truehold buys and rents back houses and originates investor loans; its entire public
+    surface is a Next.js marketing site plus two authenticated customer applications, and
+    /openapi.json, /swagger.json, /api-docs, /docs, /llms.txt, /apis.json and all seven
+    /.well-known paths return 404 on every one of www., my. and app.truehold.com while
+    api., developer. and docs.truehold.com do not resolve at all.
+  evidence:
+  - url: https://www.truehold.com/openapi.json
+    status: 404
+  - url: https://www.truehold.com/.well-known/agent-card.json
+    status: 404
+  - url: https://app.truehold.com/openapi.json
+    status: 404
+  - url: https://api.truehold.com/openapi.json
+    status: 0
+  - url: https://api.github.com/orgs/Truehold/repos
+    status: 200
+  checked: '2026-08-30'

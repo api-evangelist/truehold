@@ -1,0 +1,20 @@
+generated: '2026-08-30'
+method: searched
+source: registry.npmjs.org, pypi.org, github.com/Truehold
+note: >-
+  No first-party Truehold client library exists on any public package registry. Searched the
+  npm registry search API for "truehold" (no results), pypi.org/pypi/truehold/json (404), and
+  the company's GitHub organization github.com/Truehold, which has existed since 2021-08-30
+  and publishes zero public repositories. Truehold ships no API, so there is nothing for an
+  SDK to wrap. No Packages or SDKs pointer is wired into apis.yml.
+package_count: 0
+packages: []
+evidence:
+- url: https://registry.npmjs.org/-/v1/search?text=truehold
+  status: 200
+  finding: zero matching packages
+- url: https://pypi.org/pypi/truehold/json
+  status: 404
+- url: https://api.github.com/orgs/Truehold/repos
+  status: 200
+  finding: public_repos = 0

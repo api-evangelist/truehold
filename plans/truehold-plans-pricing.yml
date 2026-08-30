@@ -1,0 +1,20 @@
+generated: '2026-08-30'
+method: searched
+source: https://www.truehold.com/sale-leaseback
+plan_count: 0
+note: >-
+  Truehold publishes no plans, tiers or list prices of any kind. It is not a subscription
+  software vendor: the commercial terms are a per-property cash offer for the home plus a
+  negotiated lease rate, quoted after a consultation, and Truehold Financial loan terms are
+  quoted per borrower and property. The site has no /pricing page and none of the 390 URLs in
+  its sitemap is a pricing or plans page. There is no API, so there is no API pricing.
+  Recorded as an honest zero rather than omitted; no Plans pointer is wired into apis.yml
+  because there is nothing published to point at.
+plans: []
+evidence:
+- url: https://www.truehold.com/sale-leaseback
+  status: 200
+  finding: product page describes the offer process, states no price
+- url: https://www.truehold.com/sitemap.xml
+  status: 200
+  finding: 390 URLs, no /pricing or /plans path

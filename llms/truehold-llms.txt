@@ -1,0 +1,55 @@
+# Truehold
+
+> Truehold is a residential real estate company that buys a home from its owner and rents it
+> back to that same owner — a residential sale-leaseback — so the owner can convert home equity
+> into cash without moving. Founded in 2021 in St. Louis, Missouri, it also transacts portfolio
+> and multifamily sales with investors and, through Truehold Financial (Jacksonville, Florida),
+> originates DSCR, fix-and-flip and other investor lending products.
+
+IMPORTANT FOR AGENTS: Truehold publishes NO public API. There is no developer portal, no API
+reference, no OpenAPI/AsyncAPI/GraphQL contract, no SDK on any public package registry, no MCP
+server and no A2A agent card. Every path below is a human-facing marketing or account page.
+Verified 2026-08-30 by probing /openapi.json, /swagger.json, /api-docs, /docs, /llms.txt,
+/apis.json and the full /.well-known/* set on www.truehold.com, my.truehold.com and
+app.truehold.com — all 404. api.truehold.com, developer.truehold.com and docs.truehold.com do
+not resolve. Do not attempt to construct API calls against these hosts.
+
+## Company
+
+- [Truehold](https://www.truehold.com/): Company home page.
+- [About Truehold](https://www.truehold.com/about): Founding story, timeline and leadership.
+- [Licensing](https://www.truehold.com/licensing): State real estate and lending licenses.
+- [Work With Us](https://www.truehold.com/work-with-us): Careers.
+- [Reviews](https://www.truehold.com/truehold-reviews): Customer reviews.
+
+## Products
+
+- [Sale-Leaseback](https://www.truehold.com/sale-leaseback): Sell your home and stay in it as a renter.
+- [Sell Your Home](https://www.truehold.com/sell-your-home): Direct home purchase.
+- [Renting](https://www.truehold.com/renting): What tenancy with Truehold involves.
+- [Portfolio Sales](https://www.truehold.com/portfolio-sales): Selling a portfolio of rental homes.
+- [Multifamily Sales](https://www.truehold.com/multifamily-sales): Multifamily property transactions.
+- [Investor Lending](https://www.truehold.com/investor-lending): Truehold Financial lending products.
+- [DSCR Loans](https://www.truehold.com/dscr-loans): Debt-service-coverage-ratio investor loans.
+- [Fix and Flip](https://www.truehold.com/fix-and-flip): Short-term renovation financing.
+
+## Accounts
+
+- [Truehold Account](https://my.truehold.com/): Authenticated customer portal for managing transactions.
+- [Truehold Financial](https://app.truehold.com/): Authenticated investor lending application.
+
+## Support and policy
+
+- [FAQs](https://www.truehold.com/faqs): Customer help center.
+- [Partner With Us](https://www.truehold.com/partner-with-us): Agent and partner referral program.
+- [Terms of Service](https://www.truehold.com/terms)
+- [Privacy Policy](https://www.truehold.com/privacy)
+- Email: hello@truehold.com — Press: press@truehold.com
+
+## Optional
+
+- [Blog](https://www.truehold.com/post): Long-form posts on equity, retirement and renting.
+- [News](https://www.truehold.com/news): Company news.
+- [Info Kit](https://www.truehold.com/info-kit): Downloadable overview.
+- [LinkedIn](https://www.linkedin.com/company/truehold)
+- [GitHub organization](https://github.com/Truehold): Exists since 2021 with zero public repositories.

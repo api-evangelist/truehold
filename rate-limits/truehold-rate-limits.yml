@@ -1,0 +1,21 @@
+generated: '2026-08-30'
+method: searched
+source: https://www.truehold.com/
+limit_count: 0
+note: >-
+  Not applicable rather than undocumented. Truehold exposes no public API, so there is no
+  request surface to rate limit and no runtime headers to record. Contract discovery on
+  2026-08-30 probed /openapi.json, /swagger.json, /api-docs, /docs and the /.well-known/*
+  set across www.truehold.com, my.truehold.com and app.truehold.com and every path 404d;
+  api.truehold.com, developer.truehold.com and docs.truehold.com do not resolve in DNS.
+  No RateLimits pointer is wired into apis.yml.
+rate_limits: []
+headers: []
+evidence:
+- url: https://www.truehold.com/openapi.json
+  status: 404
+- url: https://app.truehold.com/openapi.json
+  status: 404
+- url: https://api.truehold.com/openapi.json
+  status: 0
+  finding: NXDOMAIN
