@@ -11,6 +11,19 @@ description: 'Truehold is a St. Louis, Missouri-founded residential real estate 
   and borrowers; it publishes no developer program, no API documentation and no
   machine-readable API contract.'
 url: https://raw.githubusercontent.com/api-evangelist/truehold/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - rate-limits
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://www.truehold.com/assets/og/truehold-og.png
 x-type: company
 x-source: harvest:secondary-market
